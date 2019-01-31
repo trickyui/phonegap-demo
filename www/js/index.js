@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
@@ -44,6 +44,17 @@ var app = {
     }
 };
 
+function testAjax() {
+    $.ajax({
+        method: "GET",
+        url:"./test.html",
+        datatype: "text",
+        success: function(resp){
+            $('.modal-dialog').html(resp);
+        }
+    })
+}
+
 function onButtonPress(e) {
     if (e == 'c') {
         navigator.camera.getPicture(onSuccess, onFail);
@@ -55,7 +66,7 @@ function onButtonPress(e) {
         }
     } else if (e == 'l') {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
-         function onSuccess(position) {
+        function onSuccess(position) {
             alert('Latitude: ' + position.coords.latitude + '\n' +
                 'Longitude: ' + position.coords.longitude + '\n' +
                 'Altitude: ' + position.coords.altitude + '\n' +

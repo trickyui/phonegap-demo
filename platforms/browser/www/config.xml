@@ -18,11 +18,6 @@
     <preference name="orientation" value="portrait" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <preference name="SplashScreen" value="/img/logo.png" />
-    <preference name="SplashScreenDelay" value="3000" />
-    <preference name="FadeSplashScreenDuration" value="3000" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="SplashScreenBackgroundColor" value="#d23030" />
-    <preference name="SplashScreenWidth" value="300" />
-    <preference name="SplashScreenHeight" value="300" />
+    <preference name="FadeSplashScreenDuration" value="3000" />
 </widget>
