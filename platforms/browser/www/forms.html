@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1" />
+    <title>MEBAA</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <header class="fixed-top bg-white">
+        <nav class="navbar">
+            <a class="navbar-brand text-uppercase" href="#"><img src="images/logo.png" alt="MEBAA" class="img-fluid"></a>
+            <ul class="list-inline ml-auto m-0">
+                <li class="list-inline-item mr-4 align-middle"><i class="fa fa-bell-o"></i><span class="badge badge-success rounded-circle">5</span></li>
+                <li class="list-inline-item mr-4 align-middle"><i class="fa fa-envelope-o"></i><span class="badge badge-danger rounded-circle">5</span></li>
+                <li class="list-inline-item"><img src="images/user.svg" alt="User" class="rounded-circle user-img"></li>
+                <li class="list-inline-item align-middle">
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="text-uppercase" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">James Bond
+                            <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Profile</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-inline-item align-middle"><a href="javascript:void(0);" id="hamburger"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="bg-white left-panel fixed-bottom">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="forms.html"><i class="fa fa-forumbee"></i> Forms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lists.html"><i class="fa fa-list-ul"></i> Lists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="buttons.html"><i class="fa fa-rocket"></i>Buttons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dropdown.html"><i class="fa fa-rocket"></i>Dropdown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tabs.html"><i class="fa fa-dot-circle-o"></i> Tabs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alerts.html"><i class="fa fa-bell-o"></i> Alerts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="progress.html"><i class="fa fa-compass"></i> Progress Bars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="spinner.html"><i class="fa fa-spinner"></i> Spinner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="modal.html"><i class="fa fa-windows"></i> Modal Popup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tooltip.html"><i class="fa fa-comment-o"></i> Tooltip & Popover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="collapsible.html"><i class="fa fa-clone"></i> Collapsible</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagination.html"><i class="fa fa-table"></i> Pagination</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="right-panel">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Forms</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                        placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                        with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sizing</h5>
+                            <div class="form-group"><input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"></div>
+                            <div class="form-group"><input class="form-control" type="text" placeholder="Default input"></div>
+                            <div class="form-group"><input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"></div>
+                            <div class="form-group"><select class="form-control form-control-lg">
+                                    <option>Large select</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><select class="form-control">
+                                    <option>Default select</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><select class="form-control form-control-sm">
+                                    <option>Small select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Readonly</h5>
+                            <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Readonly Plain Text</h5>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                            value="email@example.com">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Horizontal Form</h5>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="input-group col-sm-10">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="input-group col-sm-10">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-key"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                                    value="option1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    First radio
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                                    value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Second radio
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                                    value="option3" disabled>
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    Third disabled radio
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group row">
+                                    <div class="col-sm-2">Checkbox</div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">
+                                                Example checkbox
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Range Input</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControlRange">Example Range input</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Checkbox Input</h5>
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"
+                                            disabled>
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Disabled checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"
+                                        disabled>
+                                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Radio Input</h5>
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Default radio
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                            value="option3" disabled>
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            Disabled radio
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                        value="option3" disabled>
+                                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Forms</h5>
+                            <div class="form-group">
+                                <label>Custom Checkbox</label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Custom Radio</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customRange1">Example range</label>
+                                <input type="range" class="custom-range" id="customRange1">
+                                <input type="range" class="custom-range" min="0" max="5" id="customRange2">
+                                <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Switches</h5>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Form Row</h5>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h5 card-title">Disabled Form</div>
+                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..."
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h5 card-title">Browser Default Validation</div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationDefault01">First name</label>
+                                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name"
+                                            value="Mark" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationDefault02">Last name</label>
+                                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
+                                            value="Otto" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationDefaultUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                                placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationDefault03">City</label>
+                                        <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                                            required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationDefault04">State</label>
+                                        <input type="text" class="form-control" id="validationDefault04" placeholder="State"
+                                            required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationDefault05">Zip</label>
+                                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck2">
+                                            Agree to terms and conditions
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h5 card-title">Custom Validate Form</div>
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">First name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                                            value="Mark" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Last name</label>
+                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                            value="Otto" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustomUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationCustomUsername"
+                                                placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">City</label>
+                                        <input type="text" class="form-control" id="validationCustom03" placeholder="City"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom04">State</label>
+                                        <input type="text" class="form-control" id="validationCustom04" placeholder="State"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom05">Zip</label>
+                                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </form>
+
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h5 card-title">Tooltip Validation Form</div>
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltip01">First name</label>
+                                        <input type="text" class="form-control" id="validationTooltip01" placeholder="First name"
+                                            value="Mark" required>
+                                        <div class="valid-tooltip">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltip02">Last name</label>
+                                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name"
+                                            value="Otto" required>
+                                        <div class="valid-tooltip">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltipUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationTooltipUsername"
+                                                placeholder="Username" aria-describedby="validationTooltipUsernamePrepend"
+                                                required>
+                                            <div class="invalid-tooltip">
+                                                Please choose a unique and valid username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationTooltip03">City</label>
+                                        <input type="text" class="form-control" id="validationTooltip03" placeholder="City"
+                                            required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip04">State</label>
+                                        <input type="text" class="form-control" id="validationTooltip04" placeholder="State"
+                                            required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip05">Zip</label>
+                                        <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip"
+                                            required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
